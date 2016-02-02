@@ -1,6 +1,6 @@
 {
     "sub": true,
-    "loopfunc": true
+    "loopfunc": true,
     "laxbreak": true,
     "globalstrict": true,
     "expr": true,

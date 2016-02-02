@@ -13,21 +13,27 @@ gulp.task('check.versions', task('check.versions'));
 
 // --------------
 // Postinstall.
-gulp.task('postinstall', done =>
-    runSequence('clean',
+gulp.task('postinstall', function(done) {
+    runSequence(
+        'clean',
         'npm',
-        done));
+        done
+    )
+});
 
 // --------------
 // Build dev.
-gulp.task('build.dev', done =>
-    runSequence('clean.dist',
-        'tslint',
+gulp.task('build.dev', function(done) {
+    runSequence(
+        'clean.dist',
+        //'tslint',
         'build.sass.dev',
         'build.img.dev',
         'build.js.dev',
         'build.index',
-        done));
+        done
+    )
+});
 
 // --------------
 // Build prod.

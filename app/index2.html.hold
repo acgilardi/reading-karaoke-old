@@ -1,0 +1,24 @@
+<body>
+<div id="info">
+    <h2>Audio Analysis Demo</h2>
+    <p>Drop an MP3 file to play it, or switch to the mic input. When a beat is detected the volume bar flashes white. Requires Chrome.</p>
+    <p> <a href="http://www.airtightinteractive.com/2013/10/making-audio-reactive-visuals/">View Blog Post</a>. Built by <a href="https://twitter.com/felixturner">@felixturner</a>
+    </p>
+    <p>Music: "Cissy Strut" by The Meters</p>
+</div>
+<div id="controls"><div class="dg main" style="width: 245px;"><ul><li class="folder"><div class="dg"><ul><li class="title">Settings</li><li class="cr boolean"><div><span class="property-name">Use Mic</span><div class="c"><input type="checkbox"></div></div></li><li class="cr number has-slider"><div><span class="property-name">Gain</span><div class="c"><div><input type="text"></div><div class="slider"><div class="slider-fg" style="width: 20%;"></div></div></div></div></li><li class="cr number has-slider"><div><span class="property-name">Beat Hold</span><div class="c"><div><input type="text"></div><div class="slider"><div class="slider-fg" style="width: 40%;"></div></div></div></div></li><li class="cr number has-slider"><div><span class="property-name">Beat Decay</span><div class="c"><div><input type="text"></div><div class="slider"><div class="slider-fg" style="width: 70%;"></div></div></div></div></li></ul></div></li></ul><div class="close-button" style="width: 245px;">Close Controls</div></div></div>
+<canvas id="audioDebug" width="330" height="250"></canvas>
+
+<div id="preloader" style="display: none;"></div>
+
+<script src="../lib/minivents.min.js"></script>
+<script src="../lib/jquery-1.9.1.min.js"></script>
+<script src="../lib/stats.min.js"></script>
+<script src="../lib/dat.gui.min.js"></script>
+<script src="../lib/atutil.js"></script>
+<script src="js/Main.js"></script>
+<script src="js/AudioHandler.js"></script>
+<script src="js/ControlsHandler.js"></script>
+
+
+<span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@2x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body>
