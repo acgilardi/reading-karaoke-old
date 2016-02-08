@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {AudioHandler} from '../../services/AudioHandler'
+//import {AudioHandler} from '../../services/AudioHandler'
 
 @Component({
     selector: 'home',
@@ -7,13 +7,13 @@ import {AudioHandler} from '../../services/AudioHandler'
     styleUrls: ['./components/home/home.css']
 })
 export class HomeComponent {
-    static audioHandler = new AudioHandler();
-
-    startBeat():void {
-        HomeComponent.audioHandler.init();
-    }
-
-    stopBeat():void {
-        HomeComponent.audioHandler.stopSound();
-    }
+    //static audioHandler = new AudioHandler();
+    //
+    //startBeat():void {
+    //    HomeComponent.audioHandler.init();
+    //}
+    //
+    //stopBeat():void {
+    //    HomeComponent.audioHandler.stopSound();
+    //}
 }

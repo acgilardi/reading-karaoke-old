@@ -13,32 +13,27 @@ gulp.task('check.versions', task('check.versions'));
 
 // --------------
 // Postinstall.
-gulp.task('postinstall', function(done) {
-    runSequence(
-        'clean',
+gulp.task('postinstall', done =>
+    runSequence('clean',
         'npm',
-        done
-    )
-});
+        done));
 
 // --------------
 // Build dev.
-gulp.task('build.dev', function(done) {
-    runSequence(
-        'clean.dist',
-        //'tslint',
+gulp.task('build.dev', done =>
+    runSequence('clean.dist',
+        'tslint',
         'build.sass.dev',
         'build.img.dev',
         'build.js.dev',
         'build.index',
-        done
-    )
-});
+        done));
 
 // --------------
 // Build prod.
 gulp.task('build.prod', done =>
-    runSequence('clean.dist',
+    runSequence(
+        'clean.dist',
         'clean.tmp',
         'tslint',
         'build.sass.dev',
@@ -73,8 +68,15 @@ gulp.task('test', done =>
 
 // --------------
 // Serve.
-gulp.task('serve', done =>
-    runSequence('build.dev',
+gulp.task('serve.prod', done =>
+    runSequence(
+        'build.prod',
+        'server.start',
+        done));
+
+gulp.task('serve.dev', done =>
+    runSequence(
+        'build.dev',
         'server.start',
         'watch.serve',
         done));
