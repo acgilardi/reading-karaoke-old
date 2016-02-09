@@ -8,6 +8,7 @@ import {
 import {HomeComponent} from '../home/home';
 import {ReadComponent} from '../read/read';
 import {AboutComponent} from '../about/about';
+import {ViewComponent} from '../read/view';
 import {NameList} from '../../services/name_list';
 
 @Component({
@@ -21,7 +22,8 @@ import {NameList} from '../../services/name_list';
 @RouteConfig([
     {path: '/', component: HomeComponent, as: 'Home'},
     {path: '/about', component: AboutComponent, as: 'About'},
-    {path: '/read', component: ReadComponent, as: 'Read'}
+    {path: '/read', component: ReadComponent, as: 'Read'},
+    {path: '/view', component: ViewComponent, as: 'View'}
 ])
 export class AppComponent {
 }

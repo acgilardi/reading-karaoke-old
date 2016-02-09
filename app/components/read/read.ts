@@ -8,13 +8,4 @@ import {BookComponent} from './book'
     templateUrl: './components/read/read.html'
 })
 export class ReadComponent {
-    constructor() {}
-
-    clickWord(e) : void {
-        //let myFirebaseRef = new Firebase("https://yayday.firebaseio.com/");
-
-        console.log('clicked');
-        console.log(e);
-    }
-
 }
