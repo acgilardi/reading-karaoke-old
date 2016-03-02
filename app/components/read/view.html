@@ -1,1 +1,4 @@
-<div>{{selectedWord}}</div>
+<div>{{bookText}}</div>
+<word
+    [ngClass]="{selected: selectedWordId == 'word.' + i}"
+    style="display: inline;" *ngFor="#word of words; #i = index" id="word.{{i}}">{{word}} </word>
