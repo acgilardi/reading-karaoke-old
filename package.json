@@ -1,13 +1,13 @@
 {
-  "name": "big-start-angular2-seed",
+  "name": "reading-karaoke",
   "version": "0.0.1",
-  "description": "Enterprise ready seed for Angular 2 apps",
+  "description": "Helps teachers teach with reading karaoke",
   "engines": {
     "node": "4.2.4",
     "npm": "2.14.12"
   },
   "repository": {
-    "url": "https://github.com/appmite/big-start-angular2-seed"
+    "url": "https://github.com/appmite/reading-karaoke"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
