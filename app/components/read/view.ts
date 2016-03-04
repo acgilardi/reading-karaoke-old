@@ -1,8 +1,8 @@
-import {Component, NgZone, LifecycleEvent} from 'angular2/core'
-import {BookComponent} from './book'
-import {Observable} from 'rxjs/Observable';
-import { observableFirebaseObject, observableFirebaseArray } from '../../vendor/angular2-firebase/observableFirebase';
-import {NgWhen} from '../../vendor/angular2-firebase/ngWhen';
+import {Component} from 'angular2/core';
+//import {BookComponent} from './book';
+//import {Observable} from 'rxjs/Observable';
+//import { observableFirebaseObject, observableFirebaseArray } from '../../vendor/angular2-firebase/observableFirebase';
+//import {NgWhen} from '../../vendor/angular2-firebase/ngWhen';
 
 declare var Firebase: any;
 
@@ -10,19 +10,18 @@ declare var Firebase: any;
     selector: 'view',
     //directives:  [BookComponent],
     //template: '<div />'
-    templateUrl: './components/read/view.html',
-
+    templateUrl: './components/read/view.html'
 })
 export class ViewComponent {
     public bookText: string;
     public selectedWord : string;
-    public words: Array;
-    private bookRef: Observable<any>;
+    public words: Array<String>;
+    //private bookRef: Observable<any>;
     //private bookRef = new Firebase("https://yayday.firebaseio.com/");
-    private zone = this;
+    //private zone = this;
 
     constructor() {
-        this.bookText = "(No book selected)";
+        this.bookText = '(No book selected)';
 
         //this.bookRef = new Firebase("https://yayday.firebaseio.com/book/a1");
         //console.log(this.bookRef);
@@ -49,9 +48,9 @@ export class ViewComponent {
 
     ngOnInit() {
 
-        this.bookText = observableFirebaseObject(new Firebase("https://yayday.firebaseio.com/book/a1/")
-            .child("bookText"));
-        console.log(this.bookText)
+        //this.bookText = observableFirebaseObject(new Firebase("https://yayday.firebaseio.com/book/a1/")
+        //    .child("bookText"));
+        console.log(this.bookText);
     }
 
     //public selectedWord : String = '_';

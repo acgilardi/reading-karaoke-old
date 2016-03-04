@@ -13,7 +13,7 @@ export const LIVE_RELOAD_PORT     = argv['reload-port'] || 4002;
 export const DOCS_PORT            = argv['docs-port']   || 4003;
 export const APP_BASE             = argv['base']        || '/';
 
-export const APP_TITLE            = 'appMite - Big Start Angular2 Seed';
+export const APP_TITLE            = 'appMite - Reading Karaoke';
 export const APP_SRC              = 'app';
 export const ASSETS_SRC           = APP_SRC + '/assets';
 export const TOOLS_DIR            = 'tools';

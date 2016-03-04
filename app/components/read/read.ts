@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core'
-import {BookComponent} from './book'
+import {Component} from 'angular2/core';
+import {BookComponent} from './book';
 
 @Component({
     selector: 'read',
