@@ -22,7 +22,7 @@
     "lint": "gulp tslint",
     "start": "gulp serve.prod --env prod",
     "reinstall": "rimraf node_modules && npm cache clean && npm install",
-    "postinstall": "tsd reinstall --clean && tsd link && tsd rebundle && gulp check.versions && gulp serve.prod --env prod",
+    "postinstall": "tsd reinstall --clean && tsd link && tsd rebundle && gulp check.versions && gulp postinstall",
     "serve.dev": "gulp serve.dev --env dev",
     "serve.prod": "gulp serve.prod --env prod",
     "tasks.list": "gulp --tasks-simple",
